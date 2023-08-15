@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1><a class="navbar-brand" href="index.html">Meal App <i class="fas fa-hamburger"></i></a> <button class="navbar-toggler" type="button" onclick="showFavMealList()">
+                <i class="fas fa-heart"></i>
+            </button></h1>   
+        </nav>
+            <div class="meal-search-box">
+                <input type="text" class="search-control" placeholder="Search for Favourite Meal..." id="search-input">
+                <button type="submit" class="search-btn btn" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+    </header>
+    <main>
+        <section>
+            <div class="Meal-result">
+                <h3 class="title" style="color: orange;">Your Favourite Search Results...</h3>
+            </div>
+            <div class="recipe-details">
+                <button type="button" class="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="recipe-details-content"></div>
+            </div>
+            <div class="favourite-details">
+                <button type="button" class="favourite-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="favourite-details-content"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
